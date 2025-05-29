@@ -1,0 +1,23 @@
+{
+  "name": "demorepo",
+  "version": "1.0.0",
+  "description": "Learning website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kritigupta531/Demorepo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kritigupta531/Demorepo/issues"
+  },
+  "homepage": "https://github.com/kritigupta531/Demorepo#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "json": "^11.0.0"
+  }
+}
