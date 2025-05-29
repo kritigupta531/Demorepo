@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/kritigupta531/Demorepo#readme",
   "dependencies": {
+    "body-parser": "^2.2.0",
     "ejs": "^3.1.10",
+    "express": "^5.1.0",
     "json": "^11.0.0"
   }
 }
