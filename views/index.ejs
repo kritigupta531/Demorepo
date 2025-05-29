@@ -1,13 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple HTML Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My College</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <h1>Welcome to My Simple HTML Page</h1>
-    <p>This is a basic HTML document structure.</p>
-    <p>Feel free to modify it as you wish!</p>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">My College</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section text-center text-white d-flex align-items-center" style="background-image: url('images/hero.jpg'); background-size: cover; height: 400px;">
+    <div class="container">
+      <h1>Welcome to My College</h1>
+      <p>Empowering Students for a Better Future</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">About Us</h2>
+      <p class="text-center">My College is dedicated to providing quality education and fostering a community of lifelong learners. Our mission is to nurture talent and inspire innovation.</p>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section id="courses" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Courses</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="images/course1.jpg" class="card-img-top" alt="Course 1">
+            <div class="card-body">
+              <h5 class="card-title">Computer Science</h5>
+              <p class="card-text">Explore the world of computing and develop cutting-edge software solutions.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="images/course2.jpg" class="card-img-top" alt="Course 2">
+            <div class="card-body">
+              <h5 class="card-title">Business Administration</h5>
+              <p class="card-text">Learn the fundamentals of business management and entrepreneurship.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="images/course3.jpg" class="card-img-top" alt="Course 3">
+            <div class="card-body">
+              <h5 class="card-title">Mechanical Engineering</h5>
+              <p class="card-text">Design and innovate mechanical systems for various industries.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Gallery</h2>
+      <div class="row">
+        <div class="col-md-3 col-sm-6 mb-4">
+          <img src="images/gallery1.jpg" class="img-fluid rounded" alt="Gallery Image 1">
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <img src="images/gallery2.jpg" class="img-fluid rounded" alt="Gallery Image 2">
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <img src="images/gallery3.jpg" class="img-fluid rounded" alt="Gallery Image 3">
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <img src="images/gallery4.jpg" class="img-fluid rounded" alt="Gallery Image 4">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <form>
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Your Name" required>
+          </div>
+          <div class="col-md-6">
+            <input type="email" class="form-control" placeholder="Your Email" required>
+          </div>
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white text-center py-3">
+    <div class="container">
+      <p>&copy; 2025 My College. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
